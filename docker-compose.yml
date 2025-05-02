@@ -45,7 +45,7 @@ services:
       - ./data/mysql/db:/var/lib/mysql
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
-      interval: 10s
+      interval: 8s
       timeout: 5s
       retries: 5
       start_period: 60s
